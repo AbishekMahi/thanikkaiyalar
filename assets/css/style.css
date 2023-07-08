@@ -19,7 +19,7 @@ body {
 
 a {
   text-decoration: none;
-  color: #d9232d;
+  color: #ed1e24;
 }
 
 a:hover {
@@ -47,7 +47,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #d9232d;
+  background: #ed1e24;
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -153,12 +153,12 @@ h6 {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-  color: #d9232d;
+  color: #ed1e24;
 }
 
 .navbar .getstarted,
 .navbar .getstarted:focus {
-  background: #d9232d;
+  background: #ed1e24;
   padding: 8px 25px;
   margin-left: 30px;
   border-radius: 4px;
@@ -205,7 +205,7 @@ h6 {
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
 .navbar .dropdown ul li:hover>a {
-  color: #d9232d;
+  color: #ed1e24;
 }
 
 .navbar .dropdown:hover>ul {
@@ -304,7 +304,7 @@ h6 {
 .navbar-mobile a:hover,
 .navbar-mobile .active,
 .navbar-mobile li:hover>a {
-  color: #d9232d;
+  color: #ed1e24;
 }
 
 .navbar-mobile .getstarted,
@@ -339,7 +339,7 @@ h6 {
 .navbar-mobile .dropdown ul a:hover,
 .navbar-mobile .dropdown ul .active:hover,
 .navbar-mobile .dropdown ul li:hover>a {
-  color: #d9232d;
+  color: #ed1e24;
 }
 
 .navbar-mobile .dropdown>.dropdown-active {
@@ -386,8 +386,8 @@ h6 {
   position: absolute;
   bottom: 0;
   top: 70px;
-  left: 50px;
-  right: 50px;
+  left: 20px;
+  right: 20px;
 }
 
 #hero .container {
@@ -405,6 +405,7 @@ h6 {
   animation-delay: 0.4s;
   margin: 0 auto 30px auto;
   color: #fff;
+  font-size: 1.25rem;
 }
 
 #hero .carousel-inner .carousel-item {
@@ -471,7 +472,7 @@ h6 {
 
 #hero .carousel-indicators li.active {
   opacity: 1;
-  background: #d9232d;
+  background: #ed1e24;
 }
 
 #hero .btn-get-started,
@@ -487,13 +488,35 @@ h6 {
   line-height: 1;
   color: #fff;
   animation-delay: 0.8s;
-  background: #d9232d;
+  background: #ed1e24;
 }
 
 #hero .btn-get-started:hover,
 .btn-get-started:hover {
   background: #df3740;
   color: #fff;
+}
+
+.btn-outline {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 13px 30px;
+  border-radius: 4px;
+  transition: 0.5s;
+  line-height: 1;
+  color: #fff;
+  animation-delay: 0.8s;
+  background: #d9232c00;
+  border: 2px solid #d9232c;
+  margin-left: 1rem;
+}
+
+.btn-outline:hover {
+  background: #df3740;
+  color: #fff !important;
 }
 
 @media (max-width: 992px) {
@@ -657,7 +680,7 @@ h6 {
 
 #testimo .carousel-indicators li.active {
   opacity: 1;
-  background: #d9232d;
+  background: #ed1e24;
 }
 
 #testimo .btn-get-started {
@@ -672,7 +695,7 @@ h6 {
   line-height: 1;
   color: #fff;
   animation-delay: 0.8s;
-  background: #d9232d;
+  background: #ed1e24;
 }
 
 #testimo .btn-get-started:hover {
@@ -847,7 +870,7 @@ section {
   top: 7px;
   position: absolute;
   font-size: 20px;
-  color: #d9232d;
+  color: #ed1e24;
 }
 
 .about .content p:last-child {
@@ -892,7 +915,7 @@ section {
 
 .services .icon-box i {
   float: left;
-  color: #d9232d;
+  color: #ed1e24;
   font-size: 40px;
 }
 
@@ -915,7 +938,7 @@ section {
 }
 
 .services .icon-box:hover h4 a {
-  color: #d9232d;
+  color: #ed1e24;
 }
 
 /*--------------------------------------------------------------
@@ -949,7 +972,7 @@ section {
 .portfolio #portfolio-flters li:hover,
 .portfolio #portfolio-flters li.filter-active {
   color: #fff;
-  background: #d9232d;
+  background: #ed1e24;
 }
 
 .portfolio #portfolio-flters li:last-child {
@@ -1062,11 +1085,11 @@ section {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #d9232d;
+  border: 1px solid #ed1e24;
 }
 
 .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #d9232d;
+  background-color: #ed1e24;
 }
 
 .portfolio-details .portfolio-info {
@@ -1191,7 +1214,7 @@ section {
 }
 
 .team .member .social a:hover {
-  background: #d9232d;
+  background: #ed1e24;
 }
 
 .team .member .social a+a {
@@ -1257,12 +1280,12 @@ section {
 }
 
 .features .nav-link:hover {
-  color: #d9232d;
+  color: #ed1e24;
 }
 
 .features .nav-link.active {
-  color: #d9232d;
-  border-color: #d9232d;
+  color: #ed1e24;
+  border-color: #ed1e24;
 }
 
 .features .tab-pane.active {
@@ -1292,7 +1315,7 @@ section {
 
   .features .nav-link.active {
     color: #fff;
-    background: #d9232d;
+    background: #ed1e24;
   }
 }
 
@@ -1321,7 +1344,7 @@ section {
 
 .pricing h4 {
   font-size: 36px;
-  color: #d9232d;
+  color: #ed1e24;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
   margin-bottom: 20px;
@@ -1353,7 +1376,7 @@ section {
 }
 
 .pricing ul i {
-  color: #d9232d;
+  color: #ed1e24;
   font-size: 18px;
   padding-right: 4px;
 }
@@ -1371,7 +1394,7 @@ section {
 }
 
 .pricing .btn-buy {
-  background: #d9232d;
+  background: #ed1e24;
   display: inline-block;
   padding: 8px 35px 9px 35px;
   border-radius: 4px;
@@ -1390,7 +1413,7 @@ section {
 
 .pricing .featured h3 {
   color: #fff;
-  background: #d9232d;
+  background: #ed1e24;
 }
 
 .pricing .advanced {
@@ -1402,7 +1425,7 @@ section {
   z-index: 1;
   font-size: 14px;
   padding: 1px 0 3px 0;
-  background: #d9232d;
+  background: #ed1e24;
   color: #fff;
 }
 
@@ -1410,13 +1433,13 @@ section {
 # Frequently Asked Questions
 --------------------------------------------------------------*/
 .faq .faq-item {
-  margin: 20px 0;
-  padding: 20px 0;
+  margin: 0;
+  padding: 0;
   border-bottom: 1px solid white;
 }
 
 .faq .faq-item i {
-  color: #dee2e6;
+  color: #747474;
   font-size: 20px;
   float: left;
   line-height: 0;
@@ -1427,13 +1450,15 @@ section {
 .faq .faq-item h4 {
   font-size: 16px;
   line-height: 26px;
-  font-weight: 500;
+  font-weight: 600;
   margin: 0 0 10px 28px;
   font-family: "Poppins", sans-serif;
 }
 
 .faq .faq-item p {
   font-size: 15px;
+  margin: 0 0 10px 28px;
+  font-family: "Poppins", sans-serif;
 }
 
 /*--------------------------------------------------------------
@@ -1612,7 +1637,7 @@ section {
 
 .contact .php-email-form input:focus,
 .contact .php-email-form textarea:focus {
-  border-color: #d9232d;
+  border-color: #ed1e24;
 }
 
 .contact .php-email-form input {
@@ -1624,7 +1649,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit] {
-  background: #d9232d;
+  background: #ed1e24;
   border: 0;
   padding: 10px 24px;
   color: #fff;
@@ -1678,7 +1703,7 @@ section {
 }
 
 .blog .entry .entry-title a:hover {
-  color: #d9232d;
+  color: #ed1e24;
 }
 
 .blog .entry .entry-meta {
@@ -1723,7 +1748,7 @@ section {
 
 .blog .entry .entry-content .read-more a {
   display: inline-block;
-  background: #d9232d;
+  background: #ed1e24;
   color: #fff;
   padding: 6px 20px;
   transition: 0.3s;
@@ -1787,7 +1812,7 @@ section {
 }
 
 .blog .entry .entry-footer a:hover {
-  color: #d9232d;
+  color: #ed1e24;
 }
 
 .blog .entry .entry-footer .cats {
@@ -1896,7 +1921,7 @@ section {
 }
 
 .blog .blog-comments .comment h5 a:hover {
-  color: #d9232d;
+  color: #ed1e24;
 }
 
 .blog .blog-comments .comment h5 .reply {
@@ -1997,7 +2022,7 @@ section {
 
 .blog .blog-pagination li.active,
 .blog .blog-pagination li:hover {
-  background: #d9232d;
+  background: #ed1e24;
 }
 
 .blog .blog-pagination li.active a,
@@ -2048,7 +2073,7 @@ section {
   font-size: 16px;
   padding: 0 15px;
   margin: -1px;
-  background: #d9232d;
+  background: #ed1e24;
   color: #fff;
   transition: 0.3s;
   border-radius: 0 4px 4px 0;
@@ -2078,7 +2103,7 @@ section {
 }
 
 .blog .sidebar .categories ul a:hover {
-  color: #d9232d;
+  color: #ed1e24;
 }
 
 .blog .sidebar .categories ul a span {
@@ -2108,7 +2133,7 @@ section {
 }
 
 .blog .sidebar .recent-posts h4 a:hover {
-  color: #d9232d;
+  color: #ed1e24;
 }
 
 .blog .sidebar .recent-posts time {
@@ -2144,8 +2169,8 @@ section {
 
 .blog .sidebar .tags ul a:hover {
   color: #fff;
-  border: 1px solid #d9232d;
-  background: #d9232d;
+  border: 1px solid #ed1e24;
+  background: #ed1e24;
 }
 
 .blog .sidebar .tags ul a span {
@@ -2205,7 +2230,7 @@ section {
 }
 
 #footer .footer-top .social-links a:hover {
-  background: #d9232d;
+  background: #ed1e24;
   color: #fff;
   text-decoration: none;
 }
@@ -2279,7 +2304,7 @@ section {
   background: none;
   font-size: 16px;
   padding: 0 20px 2px 20px;
-  background: #d9232d;
+  background: #ed1e24;
   color: #fff;
   transition: 0.3s;
   border-radius: 0 4px 4px 0;
@@ -2309,4 +2334,26 @@ section {
 
 #footer .credits a:hover {
   color: white;
+}
+
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background-color: #25D366;
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  z-index: 999;
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-button:hover {
+  transform: scale(1.1);
+  color: #fff;
 }
