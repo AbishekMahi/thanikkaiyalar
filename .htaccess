@@ -1,0 +1,20 @@
+# Enable Rewrite Engine
+RewriteEngine On
+
+# Redirect www to non-www
+RewriteCond %{HTTP_HOST} ^www\.thanikkaiyalar\.com [NC]
+RewriteRule ^(.*)$ http://thanikkaiyalar.com/$1 [L,R=301]
+
+# Force HTTPS
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Remove .html extension
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.html [NC,L]
+
+# Set default index file
+DirectoryIndex index.html
+
+# Prevent directory listing
+Options -Indexes

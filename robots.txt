@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /blog.html
+Disallow: /team.html
+Disallow: /pricing.html
+Disallow: /portfolio.html
+Disallow: /portfolio-details.html
+Disallow: /blog-single.html
+Disallow: /testimonials.html
