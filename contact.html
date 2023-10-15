@@ -161,9 +161,13 @@
 
           <div class="col-lg-8 mt-5 mt-lg-0">
             <form class="php-email-form gform pure-form pure-form-stacked" role="form" method="POST"
-              data-email="accounts@thanikkaiyalar.com, rasulvpm@gmail.com, my3forms@gmail.com"
-              action="https://script.google.com/macros/s/AKfycbxPcTg6_Pe9ynd0l91aNbD9XcHW8PPk0qSQZxg-vAUqFUFIdx67E2_VXc-xdgfdjcyFaw/exec">
+              data-email="my3forms@gmail.com"
+              action="https://script.google.com/macros/s/AKfycbwq0lttM_25UhjMjO_dzMFK5xzZ7de7qkrgHTdoRYMrZht1iugQx6qPH4alD1M-sysQ9w/exec">
               <div class="form-elements">
+                <!-- Honeypot Field (hidden from users) -->
+                <div style="display: none;">
+                  <input type="text" name="honeypot" value="">
+                </div>
                 <div class="row">
                   <div class="col-md-6 form-group">
                     <input type="text" minlength="3" maxlength="40" id="name" name="Name" class="form-control"
@@ -297,124 +301,10 @@
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script data-cfasync="false" type="text/javascript">
-    (function () {
-      function validEmail(email) {
-        var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
-        return re.test(email);
-      }
-
-      function validateHuman(honeypot) {
-        if (honeypot) {
-          console.log("Robot Detected!");
-          return true;
-        } else {
-          console.log("Welcome Human!");
-        }
-      }
-
-      function getFormData(form) {
-        var elements = form.elements;
-
-        var fields = Object.keys(elements).filter(function (k) {
-          return (elements[k].name !== "honeypot");
-        }).map(function (k) {
-          if (elements[k].name !== undefined) {
-            return elements[k].name;
-          } else if (elements[k].length > 0) {
-            return elements[k].item(0).name;
-          }
-        }).filter(function (item, pos, self) {
-          return self.indexOf(item) == pos && item;
-        });
-
-        var formData = {};
-        fields.forEach(function (name) {
-          var element = elements[name];
-          formData[name] = element.value;
-          if (element.length) {
-            var data = [];
-            for (var i = 0; i < element.length; i++) {
-              var item = element.item(i);
-              if (item.checked || item.selected) {
-                data.push(item.value);
-              }
-            }
-            formData[name] = data.join(', ');
-          }
-        });
-
-        // add form-specific values into the data
-        formData.formDataNameOrder = JSON.stringify(fields);
-        formData.formGoogleSheetName = form.dataset.sheet || "Sheet1"; // default sheet name
-        formData.formGoogleSendEmail = form.dataset.email || ""; // no email by default
-
-        console.log(formData);
-        return formData;
-      }
-
-      function handleFormSubmit(event) {
-        event.preventDefault();
-        var form = event.target;
-        var button = form.querySelector("#button");
-        button.disabled = true;
-        button.textContent = "Sending...";
-
-        var data = getFormData(form);
-        if (data.email && !validEmail(data.email)) {
-          var invalidEmail = form.querySelector(".email-invalid");
-          if (invalidEmail) {
-            invalidEmail.style.display = "block";
-            button.disabled = false;
-            button.textContent = "Send Message";
-            return false;
-          }
-        } else {
-          disableAllButtons(form);
-          var url = form.action;
-          var xhr = new XMLHttpRequest();
-          xhr.open('POST', url);
-          xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-          xhr.onreadystatechange = function () {
-            console.log(xhr.status, xhr.statusText);
-            console.log(xhr.responseText);
-            var formElements = form.querySelector(".form-elements");
-            if (formElements) {
-              formElements.style.display = "none"; // hide form
-            }
-            var thankYouMessage = form.querySelector(".thankyou_message");
-            if (thankYouMessage) {
-              thankYouMessage.style.display = "block";
-            }
-            return;
-          };
-          var encoded = Object.keys(data).map(function (k) {
-            return encodeURIComponent(k) + "=" + encodeURIComponent(data[k]);
-          }).join('&');
-          xhr.send(encoded);
-        }
-      }
-
-      function loaded() {
-        console.log("Contact form submission handler loaded successfully.");
-        var forms = document.querySelectorAll("form.gform");
-        for (var i = 0; i < forms.length; i++) {
-          forms[i].addEventListener("submit", handleFormSubmit, false);
-        }
-      };
-      document.addEventListener("DOMContentLoaded", loaded, false);
-
-      function disableAllButtons(form) {
-        var buttons = form.querySelectorAll("#button");
-        for (var i = 0; i < buttons.length; i++) {
-          buttons[i].disabled = true;
-        }
-      }
-    })();
-  </script>
   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/form.js"></script>
 
 </body>
 
