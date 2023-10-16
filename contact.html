@@ -199,6 +199,13 @@
                   <div class="error-message"></div>
                   <div class="sent-message">Your message has been sent. Thank you!</div>
                 </div> -->
+                <input type="url" name="Source URL" id="geturl" readonly hidden value="">
+                <script>
+                  document.addEventListener("DOMContentLoaded", function () {
+                    var urlInput = document.getElementById("geturl");
+                    urlInput.value = window.location.href;
+                  });
+                </script>
                 <div class="text-center"><button id="button" type="submit" onclick="myFunction()">Send Message</button>
                 </div>
               </div>
