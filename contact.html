@@ -199,13 +199,9 @@
                   <div class="error-message"></div>
                   <div class="sent-message">Your message has been sent. Thank you!</div>
                 </div> -->
-                <input type="url" name="Source URL" id="geturl" readonly hidden value="">
-                <script>
-                  document.addEventListener("DOMContentLoaded", function () {
-                    var urlInput = document.getElementById("geturl");
-                    urlInput.value = window.location.href;
-                  });
-                </script>
+                <input type="url" name="Submitted in this URL" id="geturl" required hidden readonly value="">
+                <input type="text" name="Device Type" id="deviceType" required hidden readonly value="">
+                <input type="text" name="Browser name" id="browserName" required hidden readonly value="">
                 <div class="text-center"><button id="button" type="submit" onclick="myFunction()">Send Message</button>
                 </div>
               </div>
